@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Dark_Blue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+
+    --font_Overpass: "Overpass", sans-serif;
+}
+
+body{
+    background-color: var(--VeryDarkBlue);
+    font-size: 14px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rating_state_start{
+    background-color: var(--Dark_Blue);
+    width: 20%;
+    padding: 2%;
+    border-radius: 8px;
+    font-family: var(--font_Overpass);
+    flex-direction: column;
+}
+h2{
+    color: var(--White);
+    font-weight: 700;
+    font-family: var(--font_Overpass);
+}
+#rating_paragraph{
+    color: var(--Light_Grey);
+}
+button{
+    border-radius: 50%;
+    border: none;
+    background-color: var(--VeryDarkBlue);
+    color: var(--White);
+    padding: 3.5% 5%;
+    margin: 0 6% 7% 0;
+}
+button:hover{
+    background-color: var(--Orange);
+}
+.active{
+    background-color: var(--White);
+    color: var(--Dark_Blue);
+}
+a{
+    background-color: var(--Orange);
+    color: var(--White);
+    padding: 2% 38%;
+    border-radius: 14px;
+    text-decoration: none;
+    font-family: var(--font_Overpass);
+    color: var(--Dark_Blue);
+    font-weight: 700;
+}
+a:hover{
+    background-color: var(--White);
+}
+
+.thank_you_state{
+    background-color: var(--Dark_Blue);
+    width: 20%;
+    padding: 2%;
+    border-radius: 8px;
+    font-family: var(--font_Overpass);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#secondPicture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main_rating_p{
+    background-color: var(--VeryDarkBlue);
+    color: var(--Orange);
+    border-radius: 12px;
+    padding: 2% 15%;
+}
+span{
+    color: var(--Orange);
+}
+#final_paragraph{
+    text-align: center;
+    color: var(--Light_Grey);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .rating_state_start{
+        width: 80%;
+        padding: 20px;
+    }
+    .thank_you_state{
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .thank_you_state{
+        width: 50%;
+        padding: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .rating_state_start{
+        width: 40%;
+        padding: 20px;
+    }
+    .thank_you_state{
+        width: 40%;
+        padding: 20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .rating_state_start{
+        width: 30%;
+        padding: 20px;
+    }
+    .thank_you_state{
+        width: 30%;
+        padding: 20px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .rating_state_start{
+        width: 20%;
+        padding: 22px;
+    }
+    .thank_you_state{
+        width: 20%;
+        padding: 22px;
+    }
+}
